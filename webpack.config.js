@@ -19,7 +19,6 @@ module.exports = {
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
-  mode: 'development',
   target: 'node',
   watch: true,
   output: {

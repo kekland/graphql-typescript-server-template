@@ -2,6 +2,7 @@ import "reflect-metadata"
 import { ApolloServer } from "apollo-server";
 import { buildSchema } from "type-graphql";
 import { RecipeResolver } from './recipes/recipe';
+import Logger from './logger/logger';
 
 const PORT = process.env.PORT || 8080;
 
@@ -16,8 +17,8 @@ async function bootstrap() {
     playground: true,
   });
 
-  const { url } = await server.listen(PORT);
-  console.log(`Server is running, GraphQL Playground available at ${url}`);
+  const serverInfo = await server.listen(PORT);
+  Logger.info(`Server is running at port ${serverInfo.port}. GraphQL Playground available at ${serverInfo.url}`)
 }
 
 bootstrap()
