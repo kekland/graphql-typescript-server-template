@@ -1,0 +1,24 @@
+{
+  "name": "graphql-typescript-server-template",
+  "version": "0.0.1",
+  "description": "A template for GraphQL-supported TypeScript server",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekland/graphql-typescript-server-template.git"
+  },
+  "keywords": [
+    "graphql",
+    "typescript",
+    "template"
+  ],
+  "author": "kekland <kk.erzhan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kekland/graphql-typescript-server-template/issues"
+  },
+  "homepage": "https://github.com/kekland/graphql-typescript-server-template#readme"
+}
