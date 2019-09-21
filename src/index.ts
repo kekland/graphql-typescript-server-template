@@ -20,8 +20,7 @@ async function bootstrap() {
   });
 
   const serverInfo = await server.listen(PORT);
-  Logger.info(`Server is running at port ${serverInfo.port}. 
-  GraphQL Playground is ${production ? 'disabled' : `available at ${serverInfo.url}`}.`)
+  Logger.info(`Server is running at port ${serverInfo.port}. GraphQL Playground is ${production ? 'disabled' : `available at ${serverInfo.url}`}.`)
 }
 
 bootstrap()

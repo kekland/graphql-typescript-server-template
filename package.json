@@ -4,7 +4,11 @@
   "description": "A template for GraphQL-supported TypeScript server",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "prod:build": "npm run clean && webpack -p",
+    "dev:build": "npm run clean && webpack -d",
+    "dev:watch": "npm run clean && webpack -d --watch",
+    "start": "node dist/bundle.js"
   },
   "repository": {
     "type": "git",
