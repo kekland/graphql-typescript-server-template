@@ -12,13 +12,16 @@ async function bootstrap() {
     resolvers: [RecipeResolver],
   });
 
+  const production = process.env.NODE_ENV === "production"
+
   const server = new ApolloServer({
     schema,
-    playground: true,
+    playground: !production,
   });
 
   const serverInfo = await server.listen(PORT);
-  Logger.info(`Server is running at port ${serverInfo.port}. GraphQL Playground available at ${serverInfo.url}`)
+  Logger.info(`Server is running at port ${serverInfo.port}. 
+  GraphQL Playground is ${production ? 'disabled' : `available at ${serverInfo.url}`}.`)
 }
 
 bootstrap()
