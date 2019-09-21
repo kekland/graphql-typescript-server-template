@@ -24,6 +24,7 @@
   "dependencies": {
     "apollo-server": "^2.9.3",
     "graphql": "^14.5.7",
+    "has-flag": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^0.17.5"
   },
