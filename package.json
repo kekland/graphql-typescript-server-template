@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/kekland/graphql-typescript-server-template/issues"
   },
-  "homepage": "https://github.com/kekland/graphql-typescript-server-template#readme"
+  "homepage": "https://github.com/kekland/graphql-typescript-server-template#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "graphql": "^14.5.7",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.5"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
+  }
 }
